@@ -11,7 +11,7 @@
 	<title>💸 Expense Tracker</title>
 
 	<link href="./output.css" rel="stylesheet">
-
+	<script src="./script.js" defer></script>
 </head>
 
 <body class="h-screen flex flex-col">
@@ -33,22 +33,26 @@
 
 				<div class="flex">
 
-					<input type="text" name="" value="" placeholder="Expense name..."	class="text-white border-white border-2 w-60 p-2 rounded-lg">
+					<input id="name" type="text" name="" value="" placeholder="Expense name..."	class="text-white border-white border-2 w-60 p-2 rounded-lg">
 
 				</div>
 
 				<div class="flex">
 
-					<input type="text" name="" value="" placeholder="Price $"	class="text-white border-white border-2 w-60 p-2 rounded-lg">
+					<input id="price" type="text" name="" value="" placeholder="Price $"	class="text-white border-white border-2 w-60 p-2 rounded-lg">
 
 				</div>
 
-				<button type="button" class="border-2 border-white p-2 rounded-lg cursor-pointer">Add</button>
+				<button id="addButton" type="button" class="border-2 border-white p-2 rounded-lg cursor-pointer">Add</button>
 
 			</div>
+
+				<div id="list">
+					
+				</div>
 			
 			<div class="flex flex-col mt-auto mb-10">
-				<p class="">Total: <span>$0</span></p>
+				<p class="">Total: <span id="totalPrice">$0</span></p>
 			</div>
 
 		</div>
